@@ -89,6 +89,7 @@ section a:hover {
   padding-top: 40px;
   justify-content: space-around;
   background-color: rgba(191, 122, 212, 0.1);
+  
 }
 
 .article-1:hover > img {
@@ -109,6 +110,7 @@ section a:hover {
 
 .article-1 img {
   width: 400px;
+  max-height: 400px;
   position: relative;
   left: -500px;
   transition-timing-function: linear;
@@ -120,6 +122,7 @@ section a:hover {
   display: flex;
   padding-top: 100px;
   justify-content: space-around;
+
   background-color: rgba(191, 122, 212, 0.1);
 }
 .article-2:hover > img {
@@ -137,4 +140,27 @@ section a:hover {
   right: -500px;
   transition-timing-function: linear;
   transition-duration: 0.5s;
+}
+
+
+@media screen and (max-width: 700px){
+  .article-1 {
+    flex-wrap: wrap;
+  }
+  .article-2 {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .article-2 div{
+    width: 80%;
+  }
+  .section__div{
+    width: 80%;
+  }
+  section h1{
+    font-size: 50px;
+  }
+  section a{
+    font-size: 35px;
+  }
 }
